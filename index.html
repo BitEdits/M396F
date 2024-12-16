@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M396F</title>
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: linear-gradient(144deg, DarkSlateBlue, Teal);
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 40px 0;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            background: #ff4500;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .hero button:hover {
+            background: #e03e00;
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            flex: 1 1 30%;
+            margin: 10px;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        .specs {
+            margin-top: 20px;
+            width: 100%;
+            border-spacing: 0;
+            border-collapse: separate;
+        }
+
+        .specs th, .specs td {
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        .specs th {
+            background-color: #f9f9f9;
+            border-bottom: 2px solid #e5e5e5;
+            font-weight: bold;
+        }
+
+        .specs td {
+            border-bottom: 1px solid #e5e5e5;
+            color: #555;
+        }
+
+        .specs tr:nth-child(even) td {
+            background-color: #fafafa;
+        }
+
+        .specs tr:hover td {
+            background-color: #f1f1f1;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #ff6347;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <img src="assets/logo.svg" height=50>
+                <div class="nav-links">
+                    <a href="#spec">Специфікація</a>
+                    <a href="#doc">Документація</a>
+                    <a href="#contact">Код</a>
+                </div>
+            </nav>
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>M396F</h1>
+                    <p>ATX</p>
+                    <button onclick="location.href='https://github.com/5ht/zx'" type="button">Github</button>
+                </div>
+                <div class="hero-image">
+                    <img width=400 src="assets/m396f.jpg">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+    <section id="intro" class="container">
+            <h2><a name="spec"></a></h2>
+            <p>M396F — старовинна материнська плата 386SX, спочатку виготовлена компанією PCChips,
+            оснащена чіпсетом SARC RC2016A. Ця материнська плата відома своєю роллю на початку 1990-х,
+            періоду, коли доступні та компактні системи 386SX були популярні. Плата підтримує
+            процесори 386SX або Cyrix CX486SLC, що працюють на частоті 25, 33 або 40 МГц, і
+            пропонує такі функції, як додатковий математичний співпроцесор 80387SX,
+            до 16 МБ оперативної пам’яті та кілька слотів ISA. M396F став популярною
+            мішенню для ентузіастів завдяки своїй історичній цінності, широкому використанню
+            та можливості розміщення різноманітних розширень, таких як швидші центральні
+            процесори та копроцесори.</p>
+         <p>Рішення клонувати M396F випливає з його значення як репрезентативного прикладу
+            материнських плат 386SX пізньої епохи, що демонструє економічний дизайн,
+            гнучкість і сумісність. Ці плати часто включали ребрендингові або оптимізовані
+            за ціною компоненти, що є відмінною рисою бренду PCChips. Такі проекти,
+            як <a href="https://github.com/Marco-Both/M396F-Replika">M396F Replika на GitHub</a>,
+            спрямовані на збереження цієї технології шляхом копіювання апаратного забезпечення
+            для освітніх цілей і для ентузіастів ретрокомп’ютерів. Ініціатива використовує
+            сучасні інструменти для копіювання друкованої плати та вдосконалення
+            оригінального дизайну, наприклад додавання підтримки сучасних конфігурацій
+            живлення та флеш-ПЗУ для зберігання BIOS.</p>
+    </section>
+    <section id="specifications" class="container">
+            <h2><a name="spec">Специфікація</a></h2>
+            <table class="specs">
+                <tr>
+                    <th>Процесор:</th>
+                    <td>386SX або Cyrix CX486SLC на 25, 33, 40 МГц</td>
+                </tr>
+                <tr>
+                    <th>Копроцесор:</th>
+                    <td>387SX</td>
+                </tr>
+                <tr>
+                    <th>Чіпсет:</th>
+                    <td>SARC RC2016A.</td>
+                </tr>
+                <tr>
+                    <th>Пам'ять:</th>
+                    <td>4 x SDRAM (макс. 16МБ).</td>
+                </tr>
+            </table>
+        </section>
+    <section id="specifications" class="container">
+            <h2><a name="doc">Документація</a></h2>
+    </section>
+        </main>
+
+    <footer>
+        <p> 2024 &copy; KS GROUP. All rights reserved.</p>
+    </footer>
+</body>
+</html>
